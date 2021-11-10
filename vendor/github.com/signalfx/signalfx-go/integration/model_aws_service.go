@@ -20,6 +20,7 @@ const (
 	AWSAUTO_SCALING              AwsService = "AWS/AutoScaling"
 	AWSBILLING                   AwsService = "AWS/Billing"
 	AWSACP_PRIVATE_CA            AwsService = "AWS/ACMPrivateCA"
+	AWSCERT_MANAGER              AwsService = "AWS/CertificateManager"
 	AWSCLOUD_FRONT               AwsService = "AWS/CloudFront"
 	AWSCLOUD_HSM                 AwsService = "AWS/CloudHSM"
 	AWSCLOUD_SEARCH              AwsService = "AWS/CloudSearch"
@@ -39,6 +40,7 @@ const (
 	AWSELASTIC_INTERFACE         AwsService = "AWS/ElasticInterface"
 	AWSEBS                       AwsService = "AWS/EBS"
 	AWSEFS                       AwsService = "AWS/EFS"
+	AWSEKS                       AwsService = "AWS/EKS"
 	AWSELB                       AwsService = "AWS/ELB"
 	AWSAPPLICATION_ELB           AwsService = "AWS/ApplicationELB"
 	AWSNETWORK_ELB               AwsService = "AWS/NetworkELB"
@@ -92,6 +94,7 @@ const (
 	AWSNAT_GATEWAY               AwsService = "AWS/NATGateway"
 	AWSVPN                       AwsService = "AWS/VPN"
 	WAF                          AwsService = "WAF"
+	WAFV2                        AwsService = "AWS/WAFV2"
 	AWSWORK_MAIL                 AwsService = "AWS/WorkMail"
 	AWSWORK_SPACES               AwsService = "AWS/WorkSpaces"
 	AWSNEPTUNE                   AwsService = "AWS/Neptune"
@@ -106,6 +109,7 @@ var AWSServiceNames = map[string]AwsService{
 	"AWS/AutoScaling":             AWSAUTO_SCALING,
 	"AWS/Billing":                 AWSBILLING,
 	"AWS/ACMPrivateCA":            AWSACP_PRIVATE_CA,
+	"AWS/CertificateManager":      AWSCERT_MANAGER,
 	"AWS/CloudFront":              AWSCLOUD_FRONT,
 	"AWS/CloudHSM":                AWSCLOUD_HSM,
 	"AWS/CloudSearch":             AWSCLOUD_SEARCH,
@@ -125,6 +129,7 @@ var AWSServiceNames = map[string]AwsService{
 	"AWS/ElasticInterface":        AWSELASTIC_INTERFACE,
 	"AWS/EBS":                     AWSEBS,
 	"AWS/EFS":                     AWSEFS,
+	"AWS/EKS":                     AWSEKS,
 	"AWS/ELB":                     AWSELB,
 	"AWS/ApplicationELB":          AWSAPPLICATION_ELB,
 	"AWS/NetworkELB":              AWSNETWORK_ELB,
@@ -178,6 +183,7 @@ var AWSServiceNames = map[string]AwsService{
 	"AWS/NATGateway":              AWSNAT_GATEWAY,
 	"AWS/VPN":                     AWSVPN,
 	"WAF":                         WAF,
+	"AWS/WAFV2":                   WAFV2,
 	"AWS/WorkMail":                AWSWORK_MAIL,
 	"AWS/WorkSpaces":              AWSWORK_SPACES,
 	"AWS/Neptune":                 AWSNEPTUNE,

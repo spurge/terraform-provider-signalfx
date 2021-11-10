@@ -61,7 +61,9 @@ github.com/bgentry/speakeasy
 github.com/davecgh/go-spew/spew
 # github.com/fatih/color v1.7.0
 github.com/fatih/color
-# github.com/golang/protobuf v1.3.4
+# github.com/golang/groupcache v0.0.0-20190702054246-869f871628b6
+github.com/golang/groupcache/lru
+# github.com/golang/protobuf v1.3.5
 github.com/golang/protobuf/proto
 github.com/golang/protobuf/protoc-gen-go/descriptor
 github.com/golang/protobuf/ptypes
@@ -103,8 +105,6 @@ github.com/hashicorp/go-safetemp
 github.com/hashicorp/go-uuid
 # github.com/hashicorp/go-version v1.2.0
 github.com/hashicorp/go-version
-# github.com/hashicorp/golang-lru v0.5.1
-github.com/hashicorp/golang-lru/simplelru
 # github.com/hashicorp/hcl v0.0.0-20170504190234-a4b07c25de5f
 github.com/hashicorp/hcl
 github.com/hashicorp/hcl/hcl/ast
@@ -220,9 +220,9 @@ github.com/posener/complete
 github.com/posener/complete/cmd
 github.com/posener/complete/cmd/install
 github.com/posener/complete/match
-# github.com/signalfx/golib/v3 v3.0.0
+# github.com/signalfx/golib/v3 v3.3.37
 github.com/signalfx/golib/v3/pointer
-# github.com/signalfx/signalfx-go v1.8.2-0.20210915131150-ef9961af55b6
+# github.com/signalfx/signalfx-go v1.8.2-0.20210915131150-ef9961af55b6 => github.com/spurge/signalfx-go v1.8.3-0.20211110122639-e0d53c6f2bf0
 ## explicit
 github.com/signalfx/signalfx-go
 github.com/signalfx/signalfx-go/alertmuting
@@ -245,7 +245,7 @@ github.com/signalfx/signalfx-go/util
 # github.com/spf13/afero v1.2.2
 github.com/spf13/afero
 github.com/spf13/afero/mem
-# github.com/stretchr/testify v1.4.0
+# github.com/stretchr/testify v1.6.1
 ## explicit
 github.com/stretchr/testify/assert
 # github.com/ulikunitz/xz v0.5.5
@@ -267,7 +267,7 @@ github.com/zclconf/go-cty/cty/msgpack
 github.com/zclconf/go-cty/cty/set
 # github.com/zclconf/go-cty-yaml v1.0.1
 github.com/zclconf/go-cty-yaml
-# go.opencensus.io v0.22.0
+# go.opencensus.io v0.22.2
 go.opencensus.io
 go.opencensus.io/internal
 go.opencensus.io/internal/tagencoding
@@ -389,5 +389,6 @@ google.golang.org/grpc/stats
 google.golang.org/grpc/status
 google.golang.org/grpc/tap
 google.golang.org/grpc/test/bufconn
-# gopkg.in/yaml.v2 v2.2.5
-gopkg.in/yaml.v2
+# gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c
+gopkg.in/yaml.v3
+# github.com/signalfx/signalfx-go => github.com/spurge/signalfx-go v1.8.3-0.20211110122639-e0d53c6f2bf0
