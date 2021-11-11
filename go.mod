@@ -2,7 +2,7 @@ module github.com/splunk-terraform/terraform-provider-signalfx
 
 go 1.14
 
-replace github.com/signalfx/signalfx-go => github.com/spurge/signalfx-go v1.8.3-0.20211110122639-e0d53c6f2bf0
+replace github.com/signalfx/signalfx-go => github.com/spurge/signalfx-go v1.8.3-0.20211110143320-f8fb58fff0cc
 
 require (
 	github.com/bgentry/go-netrc v0.0.0-20140422174119-9fd32a8b3d3d

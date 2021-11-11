@@ -222,7 +222,7 @@ github.com/posener/complete/cmd/install
 github.com/posener/complete/match
 # github.com/signalfx/golib/v3 v3.3.37
 github.com/signalfx/golib/v3/pointer
-# github.com/signalfx/signalfx-go v1.8.2-0.20210915131150-ef9961af55b6 => github.com/spurge/signalfx-go v1.8.3-0.20211110122639-e0d53c6f2bf0
+# github.com/signalfx/signalfx-go v1.8.2-0.20210915131150-ef9961af55b6 => github.com/spurge/signalfx-go v1.8.3-0.20211110143320-f8fb58fff0cc
 ## explicit
 github.com/signalfx/signalfx-go
 github.com/signalfx/signalfx-go/alertmuting
@@ -391,4 +391,4 @@ google.golang.org/grpc/tap
 google.golang.org/grpc/test/bufconn
 # gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c
 gopkg.in/yaml.v3
-# github.com/signalfx/signalfx-go => github.com/spurge/signalfx-go v1.8.3-0.20211110122639-e0d53c6f2bf0
+# github.com/signalfx/signalfx-go => github.com/spurge/signalfx-go v1.8.3-0.20211110143320-f8fb58fff0cc

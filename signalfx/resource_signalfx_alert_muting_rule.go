@@ -92,7 +92,7 @@ func getPayloadAlertMutingRule(d *schema.ResourceData) (*alertmuting.CreateUpdat
 		tfFilter := tfFilter.(map[string]interface{})
 		filter := &alertmuting.AlertMutingRuleFilter{
 			Property:      tfFilter["property"].(string),
-			PropertyValue: tfFilter["property_value"].(string),
+			PropertyValue: alertmuting.NewStringOrArray(tfFilter["property_value"].(string)),
 			NOT:           tfFilter["negated"].(bool),
 		}
 		filterList = append(filterList, filter)
@@ -106,7 +106,7 @@ func getPayloadAlertMutingRule(d *schema.ResourceData) (*alertmuting.CreateUpdat
 		for _, d := range val.([]interface{}) {
 			filterList = append(filterList, &alertmuting.AlertMutingRuleFilter{
 				Property:      "sf_detectorId",
-				PropertyValue: d.(string),
+				PropertyValue: alertmuting.NewStringOrArray(d.(string)),
 				NOT:           false,
 			})
 		}
@@ -184,11 +184,11 @@ func alertMutingRuleAPIToTF(d *schema.ResourceData, amr *alertmuting.AlertMuting
 			// easier for the user, so separate detectors out into their
 			// own propery.
 			case "sf_detectorId":
-				detectors = append(detectors, f.PropertyValue)
+				detectors = append(detectors, f.PropertyValue.Values...)
 			default:
 				filters = append(filters, map[string]interface{}{
 					"property":       f.Property,
-					"property_value": f.PropertyValue,
+					"property_value": f.PropertyValue.Values,
 					"negated":        f.NOT,
 				})
 			}
